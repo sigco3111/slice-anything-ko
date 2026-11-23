@@ -1,0 +1,26 @@
+{
+  "name": "slice-anything",
+  "private": true,
+  "version": "1.0.1",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --config vite.config.mjs --port 5375",
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "serve": "node scripts/preview.mjs dist 5374",
+    "test": "node test.mjs",
+    "fuzz": "node scripts/fuzz-node.mjs 3000"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.19.3",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "0.186.0",
+    "playwright": "1.64.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "@webgpu/types": "0.1.74"
+  }
+}
