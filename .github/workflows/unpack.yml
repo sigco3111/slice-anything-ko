@@ -18,6 +18,8 @@ jobs:
           unzip -o "$ZIP" -d unpacked
           rsync -a --delete --exclude .git --exclude .github --exclude unpacked --exclude '*.zip' unpacked/ ./
           rm -rf unpacked ./*.zip
+          # No Git LFS here: Pages serves pointer files as-is, so assets must be committed as real bytes
+          rm -f .gitattributes
       - name: Commit unpacked files
         run: |
           git config user.name "github-actions[bot]"
