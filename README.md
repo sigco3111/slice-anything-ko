@@ -6,6 +6,14 @@ three.js 씬 안의 어떤 메시든 원하는 평면으로 몇 번이고 잘라
 
 **라이브 데모:** https://sigco3111.github.io/slice-anything-ko/
 
+## 실행 화면
+
+실제 라이브 배포에서 확인한 화면입니다.
+
+| 시작 화면 | 대나무 절단 | 한글 설정 패널 |
+| --- | --- | --- |
+| ![시작 화면](docs/screenshots/01-start.png) | ![대나무가 잘리는 장면](docs/screenshots/02-cut.png) | ![한글 설정 패널](docs/screenshots/03-panel.png) |
+
 ## 주요 특징
 
 - **자유로운 절단**: 칼날이 스친 평면을 따라 어떤 물체든 잘립니다. 잘린 두 쪽은 서로 정확히 맞닿는 단면을 가집니다.
